@@ -1,0 +1,11 @@
+.footer {
+    background-image: url("../images/hero-img-3.jpeg");
+    background-repeat: repeat-x;
+  
+    color: aliceblue;
+    font-family: monospace;
+   
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
