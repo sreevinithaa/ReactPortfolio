@@ -1,0 +1,14 @@
+.header {
+  background-image: url("../images/hero-img-3.jpeg");
+  background-repeat: repeat-x;
+
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 18px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.header h1 {
+  justify-content: flex-start;
+}
