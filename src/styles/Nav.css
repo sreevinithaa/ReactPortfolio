@@ -1,0 +1,24 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.navbar li {
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
