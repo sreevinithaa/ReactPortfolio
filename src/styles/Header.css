@@ -1,7 +1,7 @@
 .header {
   background-image: url("../images/hero-img-3.jpeg");
   background-repeat: repeat-x;
-
+width: 100%;
   color: aliceblue;
   font-family: monospace;
   font-size: 18px;
