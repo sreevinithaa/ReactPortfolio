@@ -1,0 +1,48 @@
+[{
+    "Url":"https://sreevinithaa.github.io/where-to-watch/",
+    "Repository":"https://github.com/sreevinithaa/where-to-watch.git",
+    "imgUrl":"",
+    "ProjectName":"WhereToWatch",
+    "ProjectDescription":"it is an application designed to help movie enthusiasts decide which movie to watch and navigate where, and how to watch it, weather it be bought, rented, or streamed",
+    "Technology":"JQuery,HTML,CSS and API"
+},
+{
+    "Url":"https://bookboardsite.herokuapp.com/",
+    "Repository":"https://github.com/sreevinithaa/BookBoard.git",
+    "imgUrl":"",
+    "ProjectName":"Book Board",
+    "ProjectDescription":"The responsive application allows creators of original works to upload their work (books, zines, comics, etc.) to a central marketplace, for reading by other users (consumers) of the application.",
+    "Technology":"CSS,Javascript,express,handlebars,sequalize and mysql"
+},
+{
+    "Url":"https://shrouded-bayou-77552.herokuapp.com/",
+    "Repository":"https://github.com/sreevinithaa/Tech-Blog.git",
+    "imgUrl":"",
+    "ProjectName":"Tech blog",
+    "ProjectDescription":"its a web app where developers can publish their blog posts,view all blogs and comment on other developers’ posts as well.",
+    "Technology":"html,css,javascript,express,handlebars,sequalize and mysql"
+},
+{
+    "Url":"https://sreevinithaa.github.io/LOC_Integration/",
+    "Repository":"https://github.com/sreevinithaa/LOC_Integration.git",
+    "imgUrl":"",
+    "ProjectName":"LOC",
+    "ProjectDescription":"its an application that searches and displays results from the Library of Congress API.",
+    "Technology":"JQuery,HTML,CSS and LOC API"
+},
+{
+    "Url":"https://sreevinithaa.github.io/Weather_Dashboard/",
+    "Repository":"https://github.com/sreevinithaa/Weather_Dashboard.git",
+    "imgUrl":"",
+    "ProjectName":"Weather dashboard",
+    "ProjectDescription":"it will run in the browser which will retrieve weather data from Weather API for entered cities and store entered cities.",
+    "Technology":"Boostrap,Javascript and Weather API"
+},
+{
+    "Url":"https://sreevinithaa.github.io/Work_Day_Scheduler/",
+    "Repository":"https://github.com/sreevinithaa/Work_Day_Scheduler.git",
+    "imgUrl":"",
+    "ProjectName":"Day scheduler",
+    "ProjectDescription":"its a simple calendar application that allows a user to save events for each hour of the day.Can enter events only present and future.Once user enter the event button becomes enable to save record.Can save multiple events.",
+    "Technology":"Boostrap,Javascript and MomentJs"
+}]
