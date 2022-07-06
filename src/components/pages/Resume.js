@@ -2,12 +2,26 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
+    <div className='resumeContent'>
       <h1>Resume</h1>
-      <p>
-       I am Vinitha Gowtheepan.I am passionated and hardworking coder.I have backend experience back in home(Sri Lanka).Due to my family circumstance took a break from IT and moved to Australia.In the middle i missed my career and did one freelance project for one charity organisation.Then i realise i cant stay away from coding.Coding makes me happy.Then deside to develop my skills which makes me join FullStackDeveloper course in Boot Camp.
-       Now i am all ready to start my career again with added frontEnd development skills which makes me as fullstack developer.I am so exited to re-start my career in Australia.
-      </p>
+     <h5>Please find my resume <a href="https://sreevinithaa.github.io/Portfolio_Vinitha_19_02_2022/assets/CV_Vinitha_Gowtheepan.pdf" target="_blank" download>here</a>
+     </h5>
+      <h3>FrontEnd</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>React</li>
+      </ul>
+      <h3>BackEnd</h3>
+      <ul>
+        <li>Node Js</li>
+        <li>Express</li>
+        <li>C#.net</li>
+        <li>Java</li>
+        <li>Javascript</li>
+      </ul>
     </div>
   );
 }

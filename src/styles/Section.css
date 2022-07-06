@@ -1,28 +1,31 @@
-.content
-{
-    
-    color: #36231C;
+.content {
+  color: #36231c;
   min-height: 60vh;
-    border: 5px double #36231C;
-    background-color: #FFEBCD;
-    padding: 20px;
-    font-family: monospace;
-   
-  
-   
-    display: flex;
-   
-    text-align: left;
+  border: 5px double #36231c;
+  background-color: #ffebcd;
+  padding: 20px;
+  font-family: monospace;
+
+  display: flex;
+
+  text-align: left;
 }
-.content h1{
+.content h1 {
   padding-left: 40px;
-
 }
-.content p{
-
+.content p {
   font-size: 14px;
   padding-left: 40px;
   padding-right: 40px;
   font-weight: bold;
   justify-content: flex-start;
+}
+.resumeContent
+{
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.resumeContent h1{
+  padding-left: 0;
 }
