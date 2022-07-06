@@ -7,7 +7,22 @@
     background-color: #FFEBCD;
     padding: 20px;
     font-family: monospace;
-    width: 100%;
+   
+  
+   
     display: flex;
-    justify-content: center;
+   
+    text-align: left;
+}
+.content h1{
+  padding-left: 40px;
+
+}
+.content p{
+
+  font-size: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  justify-content: flex-start;
 }
