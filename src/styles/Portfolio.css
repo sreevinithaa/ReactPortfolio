@@ -1,0 +1,9 @@
+.ProjectItem
+{
+   display: flex;
+   flex-direction: row;
+    font-size: 14px;
+  flex-wrap: wrap;
+    font-weight: bold;
+    padding: 20px;
+}

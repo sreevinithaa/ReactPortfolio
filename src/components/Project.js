@@ -10,10 +10,13 @@ function Project({
   ProjectDescription,
   Technology,
 }) {
+   
   return (
-    <div class="project_item">
+    
+
+    <div className="project_item">
       <a target="_blank" href={Url}>
-        <img src={imgUrl} alt={ProjectName} />{" "}
+        <img src={require(`${imgUrl}`)} alt={ProjectName} />{" "}
       </a>
       <h4>{ProjectName}</h4>
       <h5>

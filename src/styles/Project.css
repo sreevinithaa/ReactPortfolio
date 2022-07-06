@@ -1,0 +1,10 @@
+.project_item
+{
+   width: 40%;
+    font-size: 14px;
+  padding: 10px;
+    font-weight: bold;
+}
+.project_item img{
+    width: 200px;
+}
