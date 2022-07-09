@@ -1,7 +1,10 @@
 import React from "react";
-// Here we import the Navbar.css file to grant access to some additional classNames
+// Here we import the Project.css file to grant access to some additional classNames
 import "../styles/Project.css";
+//importing needed icons from font owesome
 import { FaGitSquare, FaStaylinked } from "react-icons/fa";
+
+//getting project details as props
 function Project({
   Url,
   Repository,

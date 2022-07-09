@@ -1,4 +1,5 @@
 import React from "react";
+//importing data from project.json
 import ProjectData from "../Data/Project.json";
 import Project from "../Project";
 
@@ -6,6 +7,7 @@ import "../../styles/Portfolio.css";
 export default function PortFolio() {
   return (
     <div className="ProjectItem">
+      {/* generate project component for each item in projectData array */}
       {ProjectData.map((item, i) => (
         <Project
           key={i}

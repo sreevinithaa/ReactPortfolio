@@ -3,6 +3,7 @@ import "../../styles/Contact.css";
 import emailjs from "emailjs-com";
 
 export default function ContactMe() {
+  //declare new state variable call formState and initializing
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -13,22 +14,30 @@ export default function ContactMe() {
     IsSuccess: false,
   });
 
+  //sumit method handler
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
+    //setting all validations to true
     setFormState({ ...formState, nameError: false });
     setFormState({ ...formState, messageError: false });
     setFormState({ ...formState, emailError: false });
     const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    //checking name is empty
     if (formState.name === "") {
       setFormState({ ...formState, nameError: true });
       return;
+      
     } else if (formState.email === "" || !regEx.test(formState.email)) {
+      //checking email is empty or invalid email; using rajex expression
       setFormState({ ...formState, emailError: true });
       return;
     } else if (formState.message === "") {
+      //checking message is empty
       setFormState({ ...formState, messageError: true });
       return;
     } else {
+      //if validation success then send a mail
       emailjs
         .sendForm(
           "service_yhmy857",
@@ -52,6 +61,8 @@ export default function ContactMe() {
         );
     }
   };
+
+  //textbox on text change validation method
   const handleChange = (event) => {
     const { name, value } = event.target;
 

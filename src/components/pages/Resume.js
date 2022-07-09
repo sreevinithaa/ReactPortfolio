@@ -1,4 +1,6 @@
 import React from 'react';
+
+//importing resume to the page
 import myResume from "../Doc/CV_Vinitha_Gowtheepan.pdf";
 export default function Resume() {
   return (
