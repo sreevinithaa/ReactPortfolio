@@ -12,7 +12,7 @@
     "imgUrl":"./images/bookboard.png",
     "ProjectName":"Book Board",
     "ProjectDescription":"The responsive application allows creators of original works to upload their work (books, zines, comics, etc.) to a central marketplace, for reading by other users (consumers) of the application.",
-    "Technology":"CSS,Javascript,express,handlebars,sequalize and mysql"
+    "Technology":"express,handlebars,sequalize and mysql"
 },
 {
     "Url":"https://shrouded-bayou-77552.herokuapp.com/",
@@ -20,7 +20,7 @@
     "imgUrl":"./images/tech_blog.png",
     "ProjectName":"Tech blog",
     "ProjectDescription":"its a web app where developers can publish their blog posts,view all blogs and comment on other developers’ posts as well.",
-    "Technology":"html,css,javascript,express,handlebars,sequalize and mysql"
+    "Technology":"express,handlebars,sequalize and mysql"
 },
 {
     "Url":"https://sreevinithaa.github.io/LOC_Integration/",

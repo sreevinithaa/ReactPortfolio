@@ -1,7 +1,7 @@
 import React from "react";
 // Here we import the Navbar.css file to grant access to some additional classNames
 import "../styles/Project.css";
-import { FaGitSquare,FaStaylinked } from "react-icons/fa";
+import { FaGitSquare, FaStaylinked } from "react-icons/fa";
 function Project({
   Url,
   Repository,
@@ -10,30 +10,31 @@ function Project({
   ProjectDescription,
   Technology,
 }) {
-   
   return (
-    
-
     <div className="project_item">
+      <div className="imgcontainer">
+        <img src={require(`${imgUrl}`)} className="image" alt={ProjectName} />{" "}
+        <div className="overlay">
+          <div className="text">
+            <a target="_blank" href={Repository}>
+              <FaGitSquare size={25} />
+            </a>
+            <a target="_blank" href={Url}>
+              <FaStaylinked size={25}> </FaStaylinked>{" "}
+            </a>
+          </div>
+        </div>
+      </div>
 
-<div class="imgcontainer">
-<img src={require(`${imgUrl}`)} class="image"  alt={ProjectName} />{" "}
-  <div class="overlay">
-    <div class="text"><a target="_blank" href={Repository}><FaGitSquare size={30} /></a><a target="_blank" href={Url}><FaStaylinked size={30}> </FaStaylinked>  </a></div>
-  </div>
-</div>
-      
- 
       <h4>{ProjectName}</h4>
       <h5>
         <strong>Description :</strong>
-        {ProjectDescription}
+        <div className="descriptionClass">{ProjectDescription}</div>
       </h5>
       <h5>
         <strong>Technology :</strong>
-        {Technology}
+        <div className="descriptionClass">{Technology}</div>
       </h5>
-      
     </div>
   );
 }

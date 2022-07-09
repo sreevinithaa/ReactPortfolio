@@ -4,11 +4,24 @@
 
   color: aliceblue;
   font-family: monospace;
-  font-size: 18px;
-  padding: 40px;
+
+  padding: 4vh;
   display: flex;
-  justify-content: space-around;
+  
+  flex-direction: column;
 }
 .header h1 {
+  display: flex;
   justify-content: flex-start;
+  font-size: 4.5vh;
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header h1 {
+    font-size: 3.5vh;
+    justify-content: center;
+  }
 }

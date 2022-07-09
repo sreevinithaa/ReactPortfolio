@@ -1,9 +1,9 @@
 .content {
   color: #36231c;
   min-height: 60vh;
-  border: 5px double #36231c;
+  border: .5vh double #36231c;
   background-color: #ffebcd;
-  padding: 20px;
+  padding: 4vh;
   font-family: monospace;
 
   display: flex;
@@ -11,19 +11,20 @@
   text-align: left;
 }
 .content h1 {
-  padding-left: 40px;
+  padding-left: 4vh;
+  font-size: 3vh;
 }
 .content p {
-  font-size: 14px;
-  padding-left: 40px;
-  padding-right: 40px;
+  font-size: 2vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
   font-weight: bold;
   justify-content: flex-start;
 }
 .resumeContent
 {
-  padding-left: 40px;
-  font-size: 14px;
+  padding-left: 4vh;
+  font-size: 2vh;
   font-weight: bold;
 }
 .resumeContent h1{

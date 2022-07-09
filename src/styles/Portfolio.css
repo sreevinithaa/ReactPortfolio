@@ -2,8 +2,13 @@
 {
    display: flex;
    flex-direction: row;
-    font-size: 14px;
+    font-size: 2vh;
   flex-wrap: wrap;
     font-weight: bold;
-    padding: 20px;
+    padding: 1vh;
+}
+@media only screen and (max-width: 600px) {
+  .ProjectItem {
+    flex-direction: column;
+  }
 }

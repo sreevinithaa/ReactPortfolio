@@ -1,79 +1,75 @@
 form {
-    width: 100%;
-  }
-  
-  form .form-group {
-    display: block;
-    width: 100%;
-    margin: 0.625rem 0;
-  }
-  
-  form .form-input,
-  form .form-textarea {
-    display: block;
-    font-size: 1rem;
-  }
-  
-  
-  
+  width: 100%;
+  padding: 4vh;
+}
 
-  .btn.btn-primary {
-    background-color: #2d3e50;
-    padding: 10px;
-    border-radius: 5px;
-    color: #d9e9e8;
-    margin-bottom: 15px;
-  }
-  
-  .btn.btn-primary:hover {
-    background-color: #57779a;
-  }
-  
-  form label,
-  form .form-label {
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0.625rem 0 0.25rem 0.3rem;
-  }
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: .5vh 0;
+}
 
-  .error {
-    background-color: #e64c66;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .success
-  {
-    
-    background-color: #0fc518;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  form .form-input {
-    width: 100%;
-    padding: 0.75rem;
-    color: #1a1a1a;
-    background-color: #ffffff;
-    margin: 0.625rem 0;
-    font-size: 1rem;
-    border: 1px solid #484848;
-    border-radius: 0.3rem;
-  }
-  
-  form .form-input.form-input-squared {
-    border-radius: 0;
-  }
-  
-  form [type='checkbox'],
-  form [type='radio'] {
-    display: inline-block;
-  }
-  
-  label form [type='checkbox'],
-  label form [type='radio'] {
-    display: inline-block;
-  }
-  
-  
+form .form-input,
+form .form-textarea {
+  display: block;
+  font-size: 2vh;
+}
+
+.btn.btn-primary {
+  background-color: #2d3e50;
+  padding: 1vh;
+  border-radius: .5vh;
+  color: #d9e9e8;
+  margin-bottom: 2vh;
+}
+
+.btn.btn-primary:hover {
+  background-color: #57779a;
+}
+
+form label,
+form .form-label {
+  display: inline-block;
+  font-size: 2vh;
+  margin: .5vh 0 0.25vh 0.5vh;
+}
+
+.error {
+  background-color: #e64c66;
+  color: #ffffff;
+  padding: 1vh;
+  border-radius: .5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.success {
+  background-color: #0fc518;
+  color: #ffffff;
+  padding: 1vh;
+  border-radius: .5vh;
+}
+
+form .form-input {
+  width: 90%;
+  padding: 1vh;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 1vh 0;
+  font-size: 2vh;
+  border: 1px solid #484848;
+  border-radius: .5vh;
+}
+
+form .form-input.form-input-squared {
+  border-radius: 0;
+}
+
+form [type="checkbox"],
+form [type="radio"] {
+  display: inline-block;
+}
+
+label form [type="checkbox"],
+label form [type="radio"] {
+  display: inline-block;
+}
