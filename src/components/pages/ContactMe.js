@@ -1,13 +1,120 @@
-import React from 'react';
-
+import React, { useState } from "react";
+import "../../styles/Contact.css";
 export default function ContactMe() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+    nameError: false,
+    emailError: false,
+    messageError: false,
+  });
+ 
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    setFormState({ ...formState, nameError: false });
+    setFormState({ ...formState, messageError: false });
+    setFormState({ ...formState, emailError: false });
+    if(formState.name=="")
+    {
+      setFormState({ ...formState, nameError: true });
+      return;
+    }
+    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (formState.email == "" || !regEx.test(formState.email)) 
+    {
+      setFormState({ ...formState, emailError: true });
+      return;
+    }   
+    if(formState.message=="")
+    {
+      setFormState({ ...formState, messageError: true });
+      return;
+    }
+  };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    if (name === "email") {
+      
+      if (value == "" ) {
+        setFormState({ ...formState, emailError: true });
+      } else {
+        setFormState({ ...formState, [name]: value ,emailError:false});
+       
+      }
+    } else if (name === "name") {
+      if (value == "") {
+        setFormState({ ...formState, nameError: true });
+      } else {
+        setFormState({ ...formState, [name]: value,nameError:false });
+      }
+    } else {
+      if (value == "") {
+        setFormState({ ...formState, messageError: true });
+      } else {
+        setFormState({ ...formState, [name]: value ,messageError:false});
+      }
+    }
+  };
   return (
     <div>
       <h1>Contact Me</h1>
-      <p>
-       I am Vinitha Gowtheepan.I am passionated and hardworking coder.I have backend experience back in home(Sri Lanka).Due to my family circumstance took a break from IT and moved to Australia.In the middle i missed my career and did one freelance project for one charity organisation.Then i realise i cant stay away from coding.Coding makes me happy.Then deside to develop my skills which makes me join FullStackDeveloper course in Boot Camp.
-       Now i am all ready to start my career again with added frontEnd development skills which makes me as fullstack developer.I am so exited to re-start my career in Australia.
-      </p>
+      <form  onSubmit={handleFormSubmit} method="POST">
+        <div className="form-group">
+          <label >Name</label>
+          <input
+            type="text"
+            placeholder="Enter Name..."
+            name="name"
+            className="form-input"
+            onChange={handleChange}
+           
+            value={formState.name}
+          />
+          {formState.nameError && (
+            <span className="error">
+              Name is required.Please enter the name.
+            </span>
+          )}
+        </div>
+        <div className="form-group">
+          <label >Email address</label>
+          <input
+            name="email"
+            type="email"
+            placeholder="Enter Email..."
+            className="form-input"
+            aria-describedby="emailHelp"
+            value={formState.email}
+            onChange={handleChange}
+          />
+          {formState.emailError && (
+            <span className="error">
+              Email address is required.Please enter a valid email address
+            </span>
+          )}
+        </div>
+        <div className="form-group">
+          <label >Message</label>
+          <textarea
+            name="message"
+            placeholder="Enter Message..."
+            className="form-input"
+            onChange={handleChange}
+            value={formState.message}
+            rows="5"
+          ></textarea>
+          {formState.messageError && (
+            <span className="error">
+              Message is required.Please enter message.
+            </span>
+          )}
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
