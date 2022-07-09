@@ -11,7 +11,7 @@
 .navbar li {
 }
 
-.navbar li a {
+.nav-link {
   display: block;
   color: white;
   text-align: center;
@@ -20,5 +20,9 @@
 }
 /* Change the link color to #111 (black) on hover */
 .navbar li a:hover {
+  background-color: #111;
+}
+.nav-active
+{
   background-color: #111;
 }

@@ -3,8 +3,7 @@ import React from 'react';
 import '../styles/Header.css';
 import Navbar from './Navbar';
 function Header({ currentPage, handlePageChange }) {
-    // TODO: Add a style attribute to header and the h1 element
-  
+   
     return (
         <div className="header">
         <h1>Vinitha Gowtheepan</h1>
