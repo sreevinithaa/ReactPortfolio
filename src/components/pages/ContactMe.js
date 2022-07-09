@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Contact.css";
+import emailjs from 'emailjs-com';
+
 export default function ContactMe() {
   const [formState, setFormState] = useState({
     name: "",
@@ -8,6 +10,7 @@ export default function ContactMe() {
     nameError: false,
     emailError: false,
     messageError: false,
+    IsSuccess:false
   });
  
   const handleFormSubmit = async (event) => {
@@ -15,21 +18,31 @@ export default function ContactMe() {
     setFormState({ ...formState, nameError: false });
     setFormState({ ...formState, messageError: false });
     setFormState({ ...formState, emailError: false });
+    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(formState.name=="")
     {
       setFormState({ ...formState, nameError: true });
       return;
-    }
-    const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      if (formState.email == "" || !regEx.test(formState.email)) 
+    }  
+    else if (formState.email == "" || !regEx.test(formState.email)) 
     {
       setFormState({ ...formState, emailError: true });
       return;
     }   
-    if(formState.message=="")
+    else if(formState.message=="")
     {
       setFormState({ ...formState, messageError: true });
       return;
+    }
+    else{
+      emailjs.sendForm('service_yhmy857', 'template_3q3w60s', event.target,'tIcYn-4eFiLeqEJEz')
+      .then((result) => {
+       
+        setFormState({ ...formState, IsSuccess: true,name:"",email:"",message:"" });
+      }, (error) => {
+          console.log(error.text);
+      });
+     
     }
   };
   const handleChange = (event) => {
@@ -115,6 +128,11 @@ export default function ContactMe() {
           Submit
         </button>
       </form>
+      {formState.IsSuccess && (
+            <span className="success">
+              Thanks for contacting me.Will get back to you soon.
+            </span>
+          )}
     </div>
   );
 }

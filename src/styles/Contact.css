@@ -22,6 +22,7 @@ form {
     padding: 10px;
     border-radius: 5px;
     color: #d9e9e8;
+    margin-bottom: 15px;
   }
   
   .btn.btn-primary:hover {
@@ -39,6 +40,15 @@ form {
     background-color: #e64c66;
     color: #ffffff;
     padding: 10px;
+    border-radius: 5px;
+  }
+  .success
+  {
+    
+    background-color: #0fc518;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
   }
   
   form .form-input {
